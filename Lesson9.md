@@ -61,7 +61,7 @@ Here is the code you need to add in **AndroidManifests.xml**.
 3. Fill out URIMatcher
 
 **Example:**
-##### <scheme>//<authority>/<path>
+#### `<scheme>//<authority>/<path>`
 `content://com.android.example.todolist/tasks`
 
 **URIMatcher**
@@ -136,6 +136,7 @@ public class TaskContentProvider extends ContentProvider {
 The flow from UI to Database:
 UI --> Resolver(URI) --> Provider --> URIMatcher --> SQL Code --> Database 
 Database then pass cursor back to UI
+
 --------------------------------------------
 #### Overview of Provider Functions
 Profider Methods|Parameters|Return Type
